@@ -1,0 +1,113 @@
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 25%;*/
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    text-decoration-line: underline;
+    color: #151FFF;
+
+  }
+  
+  li a:hover:not(.active) {
+    text-decoration-line: underline;
+    color: #151FFF;
+  }
+
+/*Home Page*/
+  /*Description text*/
+
+  #name-text {
+    font-size: x-large;
+  }
+  #home-description {
+      color: #151FFF;
+      font-size: 200%;
+  }
+
+  /*Home image*/
+  .mabel-image-1 {
+      width: 660px;
+      height: 827px;
+    }
+
+  /*Home Grid*/
+  #home-grid {
+    display: grid;
+    padding-left: 200px;
+    grid-template-columns: 580px 660px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "home-text home-img"
+}
+
+/*About Page*/
+
+  /*Text*/
+  #about-title {
+    position: absolute;
+    left: 250px;
+    font-size: 150%;
+  }
+
+  #about-description {
+    font-size: 150%;
+    
+  }
+
+  /*image*/
+  .mabel-image-2 {
+    width: 300px;
+    height: 400px;
+  }
+
+  /*grid*/
+  #about-content {
+    display: grid;
+    padding-left: 300px;
+    padding-top: 250px;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "about-image about-description";
+}
+
+  /*buttons*/
+  .buttons {
+    border-radius: 30px;
+    background-color: #151FFF;
+    color: white;
+    position: absolute;
+    top: 630px;
+    width: 120px;
+    height: 50px;
+  }
+
+  #resume-button {
+    position: absolute;
+    left: 800px;
+  }
+
+  #project-button {
+    position: absolute;
+    left: 1000px;
+  }
