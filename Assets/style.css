@@ -87,7 +87,7 @@ html {
       margin: 0px;
       padding: 0px;
       width: 20%;
-      background-color: #C4C4C4;
+      /*background-color: #C4C4C4;*/
       position: fixed;
       height: 100%;
       overflow: auto;

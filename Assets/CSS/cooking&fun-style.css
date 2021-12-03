@@ -1,0 +1,197 @@
+html {
+    background-color: #9CBDEE;
+  }
+  /*Mobile Navigation Bar*/
+    .nav_toggle {
+        position: absolute;
+        cursor: pointer;
+        margin: 0rem 1rem;
+        margin-left: auto;
+    }
+    img {
+        width: 1.5rem;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 0.2rem;
+    }
+
+    .nav_checkbox {
+        display: none;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 1rem;
+    }
+    li {
+        list-style: none;
+        display: none;
+    }
+
+    /* Toggle the hamburger menu in mobile view*/
+    #nav_checkbox:checked ~ ul.nav_menu li {
+        display: block;
+    }
+
+    /*Change from menu to close icon on tap*/
+    #nav_checkbox:checked ~ label.nav_toggle .close {
+        display: block;
+    }
+
+    #nav_checkbox:checked ~ label.nav_toggle .menu {
+        display: none;
+    }
+        
+    li a {
+        display: block;
+        color: #000;
+        padding-top: 15px;
+        text-decoration: none;
+    }
+
+    li a.active {
+        text-decoration-line: underline;
+        color: #151FFF;
+
+    }
+
+    li a:hover:not(.active) {
+        text-decoration-line: underline;
+        color: #151FFF;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    /*Project Title*/
+    #cooking-title {
+        padding-top: 15px;
+    }
+
+    /*images*/
+    .cooking-picture {
+        max-width: 100%;
+        width: 300px;
+        height: 260px;
+        padding-left: 30px;
+    }
+
+    /*Desktop view*/
+    @media only screen and (min-width: 560px) {
+        /*Navigation sidebar*/
+        .nav_toggle {
+            display: none;
+        }
+
+        .nav_menu {
+            flex-direction: column;
+        }
+        li {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            width: 20%;
+            /*background-color: #C4C4C4;*/
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            
+            padding-bottom: 15px;
+            padding-left: 5px;
+            margin: 0px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            text-decoration-line: underline;
+            color: #151FFF;
+
+        }
+
+        li a:hover:not(.active) {
+            text-decoration-line: underline;
+            color: #151FFF;
+        }
+
+        /*Title*/
+        #cooking-title {
+            position: absolute;
+            left: 320px;
+            font-size: 150%;
+        }
+
+        /*images*/
+        .cooking-picture {
+            padding: 20px;
+        }
+
+        #vid {
+            position: absolute;
+            left: 650px;
+            top: 450px;
+        }
+
+        #hgs1 {
+            position:absolute;
+            left:950px;
+            top:450px;
+        }
+        #hgs2 {
+            position:absolute;
+            left:350px;
+            top:450px;
+        }
+        #salmon-shrimp {
+            position:absolute;
+            left:650px;
+            top:190px;
+        }
+        #eggrolls {
+            position: absolute;
+            left: 650px;
+            top: 710px;
+        }   
+
+        #coffee {
+            position:absolute;
+            left:250px;
+            top: 190px;
+        }
+
+        #oats {
+            position:absolute;
+            left:1050px;
+            top: 190px;
+        }
+
+        #noodles {
+            position:absolute;
+            left: 1050px;
+            top: 710px;
+        }
+
+        #gym {
+            position:absolute;
+            left:250px;
+            top: 710px;
+            height: 400px;
+        }
+
+
+    }
