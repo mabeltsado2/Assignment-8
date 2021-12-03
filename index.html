@@ -3,20 +3,26 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final-Project</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="../Assignment-8/Assets/style.css" rel="stylesheet" type="text/css">
   </head>
   
   <body>
-      <div class="navigation">
-        <ul>
-            <li><a class="active" href=" ">Home</a></li>
-            <li><a href="about-page.html">About</a></li>
-            <li><a href=" ">Projects</a></li>
-            <li><a href=" ">Extracurriculars</a></li>
-          </ul>
-      </div>
+    <div class="row">
+      <nav class="nav">
+        <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
+        <label for="nav_checkbox" class="nav_toggle">
+          <img src="../Assignment-8/Assets/Images/hamburger-menu.png" alt="A hamburger menu" class="menu" width="100">
+          <img src="../Assignment-8/Assets/Images/close-icon.png" alt="a close button" class="close" width="100">
+        </label>
+        <ul class="nav_menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about-page.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href=" ">Cooking & Fun</a></li>
+        </ul>
+      </nav>
       <div class="home-content" id="home-grid">
-        <div id="home-text">
+        <div id="home-text" class="col-6">
             <div id="name-text">
                 <h1>Mabel Tsado</h1>
             </div>
@@ -24,13 +30,15 @@
                 Service Designer
                 <br>
                 UX Researcher
+                <br>
+                Chef
             </div>
         </div>
-        <div id="home-img">
-            <img src="home-image.png" alt="home screen image of Mabel" class="mabel-image-1">
+        <div id="home-img" class="col-12">
+            <img src="../Assignment-8/Assets/Images/home-image.png" alt="Mabel sitting on a boat in front of lit up buildings" class="mabel-home-image">
         </div>
       </div>
-      
+    </div> 
 
   </body>
 </html>
