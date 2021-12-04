@@ -228,4 +228,7 @@ html {
   #project-button {
     left: 1000px;
   }  
-
+button a {
+  text-decoration: none;
+  color: white;
+}
